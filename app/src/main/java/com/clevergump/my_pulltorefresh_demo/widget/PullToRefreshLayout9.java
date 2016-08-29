@@ -253,9 +253,6 @@ public class PullToRefreshLayout9 extends LinearLayout {
                         return false;
                     }
                     float dy = currY - mInterceptLastY;
-//                    if (Math.abs(dy) < mScaledTouchSlop) {
-//                        return false;
-//                    }
                     // |dy| >= mScaledTouchSlop
                     // 手指向下移动
                     // 注意: 一旦拦截, 后续就不再调用该方法了, 而是直接调用该控件自己的 super.dispatchTouchEvent().
@@ -343,13 +340,6 @@ public class PullToRefreshLayout9 extends LinearLayout {
                 }
                 // 如果 headerview 已经完全显示, 则需要模拟网络请求的过程.
                 else {
-//                    Toast.makeText(mContext, "开始请求数据", Toast.LENGTH_SHORT).show();
-//                    getHandler().postDelayed(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            setState(PtrCommon.STATE_RESET);
-//                        }
-//                    }, 3000);
                     if (mOnRefreshListener != null && mCurrState == PtrCommon.STATE_RELEASH_TO_REFRESH) {
                         mOnRefreshListener.onRefresh();
                         Toast.makeText(mContext, "onRefresh", Toast.LENGTH_SHORT).show();
@@ -427,16 +417,7 @@ public class PullToRefreshLayout9 extends LinearLayout {
      * @return
      */
     private boolean canScrollUp() {
-//        if(mContentView instanceof ViewGroup && ((ViewGroup) mContentView).getChildCount() > 0){
-//            return 0 - ((ViewGroup) mContentView).getChildAt(0).getScrollY();
-//        }
-//        if(mContentView instanceof ViewGroup && ((ViewGroup) mContentView).getChildCount() > 0){
-//            ((ViewGroup) mContentView).getChildAt(0).getTop();
-//        }
 
-        // 有bug. 当滑动到第0个item显示一部分的位置抬起手指, 再按下并下拉, 此时直接响应了下拉刷新的动作,
-        // 而这里本应该是让第0个item继续向下滚动直到他完全显示出来.  即使使用 canScrollUp()方法的逻辑,
-        // 也依然存在此bug. 注意: API-14中还没有引入该方法.
         if (mContentView instanceof AbsListView && ((AbsListView) mContentView).getChildCount() > 0) {
             AbsListView absLv = (AbsListView) mContentView;
             if (absLv.getFirstVisiblePosition() > 0) {
