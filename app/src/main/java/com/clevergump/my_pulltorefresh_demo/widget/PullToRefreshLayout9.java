@@ -22,11 +22,14 @@ import com.clevergump.my_pulltorefresh_demo.widget.header.PtrHeaderLayout8;
 import com.clevergump.my_pulltorefresh_demo.widget.header.base.PtrHeaderBaseLayout8;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本9.
  *
  * 实现的功能:
  * 1. 对 AbsListView 的下拉刷新, 目前只测试了 ListView 是ok的, 还未测试 GridView.
- * 2. 正在刷新时, 设置下拉无效.
+ * 2. 正在刷新时, 禁止继续下拉.
+ * 3. 提供 {@link #setCanPullDown(boolean)} 方法, 可供设置是否允许下拉.
  *
  * 存在的bug:
  * 1. 当内容View是一个 ListView 并且随着 ListView item 的不断增加, 当增加到需要滑动才能看到最后一个 item时,
@@ -198,6 +201,10 @@ public class PullToRefreshLayout9 extends LinearLayout {
         super.onLayout(changed, l, t, r, b);
     }
 
+    /**
+     * 设置是否允许下拉
+     * @param canPullDown
+     */
     public void setCanPullDown(boolean canPullDown) {
         mCanPullDown = canPullDown;
     }
@@ -277,6 +284,10 @@ public class PullToRefreshLayout9 extends LinearLayout {
         return false;
     }
 
+    /**
+     * content View 的内容在垂直方向上是否可以滚动
+     * @return
+     */
     private boolean isContentViewVerticallyScrollable() {
         return mContentView instanceof ScrollView || mContentView instanceof AbsListView;
     }
@@ -411,6 +422,10 @@ public class PullToRefreshLayout9 extends LinearLayout {
         return 0 - getScrollY();
     }
 
+    /**
+     * content View的内容是否已滚动到顶部. return true表示内容还未滚动到顶部, false otherwise.
+     * @return
+     */
     private boolean canScrollUp() {
 //        if(mContentView instanceof ViewGroup && ((ViewGroup) mContentView).getChildCount() > 0){
 //            return 0 - ((ViewGroup) mContentView).getChildAt(0).getScrollY();

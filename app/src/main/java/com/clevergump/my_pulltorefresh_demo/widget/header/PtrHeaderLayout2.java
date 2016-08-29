@@ -12,6 +12,8 @@ import com.clevergump.my_pulltorefresh_demo.utils.DensityUtils;
 import com.clevergump.my_pulltorefresh_demo.widget.header.base.PtrHeaderBaseLayout7;
 
 /**
+ * 下拉刷新头部 View 的实现类.
+ *
  * @author clevergump
  */
 public class PtrHeaderLayout2 extends PtrHeaderBaseLayout7 {

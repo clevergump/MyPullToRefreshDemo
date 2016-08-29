@@ -16,6 +16,8 @@ import com.clevergump.my_pulltorefresh_demo.R;
 import com.clevergump.my_pulltorefresh_demo.utils.DensityUtils;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本4. 实现功能: 在基础版本3的基础上, 删除了冗余的布局, 并修复了在自定义 headerview, contentview
  * 的情况下, 对整个控件进行scroll无效的bug
  *

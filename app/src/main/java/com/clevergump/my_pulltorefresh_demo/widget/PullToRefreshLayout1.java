@@ -10,7 +10,9 @@ import android.widget.Toast;
 import com.clevergump.my_pulltorefresh_demo.R;
 
 /**
- * 实现功能: 能显示出 headerview, 也能设置 headerview 的初始位置.
+ * 下拉刷新框架的核心布局.
+ *
+ * 基础版本1. 实现功能: 能显示出 headerview, 也能设置 headerview 的初始位置.
  *
  * @author clevergump
  */

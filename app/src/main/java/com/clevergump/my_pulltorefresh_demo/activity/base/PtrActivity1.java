@@ -11,6 +11,8 @@ import com.clevergump.my_pulltorefresh_demo.utils.DensityUtils;
 import com.clevergump.my_pulltorefresh_demo.widget.PullToRefreshLayout3;
 
 /**
+ * 具有下拉刷新功能的 Activity
+ *
  * @author clevergump
  */
 public class PtrActivity1 extends AppCompatActivity {
@@ -35,6 +37,4 @@ public class PtrActivity1 extends AppCompatActivity {
                 DensityUtils.dip2px(this, 80)));
         return headerView;
     }
-
-
 }

@@ -9,6 +9,8 @@ import android.widget.RelativeLayout;
 import com.clevergump.my_pulltorefresh_demo.PtrCommon;
 
 /**
+ * 下拉刷新头部 View 的基类
+ *
  * @author clevergump
  */
 public abstract class PtrHeaderBaseLayout7_1 extends RelativeLayout {

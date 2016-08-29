@@ -11,7 +11,9 @@ import com.clevergump.my_pulltorefresh_demo.utils.DensityUtils;
 import com.clevergump.my_pulltorefresh_demo.widget.header.base.PtrHeaderBaseLayout7;
 
 /**
- * 基础版本7. 实现的功能: 正在刷新时, 让 headerview 显示刷新的动画效果.
+ * 下拉刷新头部 View 的实现类.
+ *
+ * 实现的功能: 正在刷新时, 让 headerview 显示刷新的动画效果.
  * 刷新结束后, 让 headerview 取消掉刷新的动画效果.
  *
  * @author clevergump

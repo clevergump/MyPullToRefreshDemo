@@ -18,6 +18,8 @@ import com.clevergump.my_pulltorefresh_demo.R;
 import com.clevergump.my_pulltorefresh_demo.utils.DensityUtils;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本6. 增加功能:
  * 1. 增加手指滑动距离与 mScaledTouchSlop 的大小比较. 只有大于该值, 才会让控件移动.
  * 2. 增加上拉下拉的阻力效果. 即: 控件随手指移动的距离要小于手指本身移动的距离. 该参数{@link #SCROLL_PROPORTION}可以自由设定.

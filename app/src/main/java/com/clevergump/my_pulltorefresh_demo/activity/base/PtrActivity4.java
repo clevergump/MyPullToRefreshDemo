@@ -9,6 +9,8 @@ import com.clevergump.my_pulltorefresh_demo.R;
 import com.clevergump.my_pulltorefresh_demo.widget.PullToRefreshLayout6;
 
 /**
+ * 具有下拉刷新功能的 Activity
+ *
  * @author clevergump
  */
 public class PtrActivity4 extends AppCompatActivity {

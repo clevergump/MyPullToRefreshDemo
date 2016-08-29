@@ -16,6 +16,8 @@ import com.clevergump.my_pulltorefresh_demo.R;
 import com.clevergump.my_pulltorefresh_demo.utils.DensityUtils;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本3. 结合 PtrActivity3 使用, 实现的功能是: 提供了默认的 headerview 和 contentview, 当然也可以
  * 对二者进行自定义, 分别通过调用 {@link #setPtrHeaderView} 和 {@link #setPtrContentView} 方法来实现.
  *

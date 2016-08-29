@@ -21,6 +21,8 @@ import com.clevergump.my_pulltorefresh_demo.widget.header.PtrHeaderLayout8;
 import com.clevergump.my_pulltorefresh_demo.widget.header.base.PtrHeaderBaseLayout8;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本8:
  * 1. 重构. 将先前 headerview 中与下拉刷新状态相关的 get/set 逻辑移动到该类中, 由该类统一管理, headerview
  * 只负责命令的执行, 而不再负责命令的分发.

@@ -20,6 +20,8 @@ import com.clevergump.my_pulltorefresh_demo.widget.header.base.PtrHeaderBaseLayo
 import com.clevergump.my_pulltorefresh_demo.widget.header.PtrHeaderLayout7_1;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本7_1. 是对"基础版本7"的完善. 主要做了两件事:
  * 1. 代码重构(抽出 {@link PtrHeaderBaseLayout7_1} 和 {@link PtrHeaderLayout7_1} 两个类专用于控制
  *    headerview 的状态及UI变化)

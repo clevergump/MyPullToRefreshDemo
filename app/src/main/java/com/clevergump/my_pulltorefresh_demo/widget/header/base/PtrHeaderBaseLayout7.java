@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 /**
+ * 下拉刷新头部 View 的基类
+ *
  * @author clevergump
  */
 public abstract class PtrHeaderBaseLayout7 extends RelativeLayout {

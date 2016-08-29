@@ -17,6 +17,8 @@ import com.clevergump.my_pulltorefresh_demo.R;
 import com.clevergump.my_pulltorefresh_demo.utils.DensityUtils;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本5. 实现的功能: 初始只能下拉, 随后控件能跟随随手指一起上下移动, 但下拉后再向上移动, 最多只能
  * 移动到 headerview 刚好隐藏起来的位置.
  *

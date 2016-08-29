@@ -20,6 +20,8 @@ import com.clevergump.my_pulltorefresh_demo.widget.header.PtrHeaderLayout1;
 import com.clevergump.my_pulltorefresh_demo.widget.header.PtrHeaderLayout2;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本7. 实现的功能: 刷新时能够显示刷新动画. 需结合 {@link PtrHeaderBaseLayout7} 和他的两个子类
  * {@link PtrHeaderLayout1}, {@link PtrHeaderLayout2} 一起使用.
  *

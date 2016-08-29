@@ -10,6 +10,8 @@ import android.widget.Scroller;
 import com.clevergump.my_pulltorefresh_demo.R;
 
 /**
+ * 下拉刷新框架的核心布局.
+ *
  * 基础版本2. 添加平滑滚动的代码.
  *
  * @author clevergump
