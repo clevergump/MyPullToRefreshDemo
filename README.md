@@ -7,3 +7,5 @@
 其中, 关于第一种, 目前的代码只对 `AbsListView` 的下拉做了适配, 并且只对 `ListView` 做了相应测试, 还需进一步完善.    
 
 该demo包含多个命名以 MainActivity 开头, 以数字结尾的 java文件, 这些文件记录了该框架一步步的实现过程.
+
+![运行效果图](./img/img_run.gif)
