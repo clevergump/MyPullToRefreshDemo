@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="40dp"
+    android:background="#33ff0000"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:id="@+id/iv_refreshing"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_ptr_rotate"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <View
+            android:id="@+id/view_placeholder"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/iv_refreshing"
+            android:src="@drawable/indicator_arrow"
+            />
+
+        <TextView
+            android:id="@+id/tv_refresh_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="下拉可以刷新"
+            tools:text="下拉可以刷新"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/view_placeholder"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

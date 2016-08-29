@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyPullToRefreshDemo</string>
+    <string-array name="ptr_text_tips">
+        <item>下拉可以刷新</item>
+        <item>释放立即刷新</item>
+        <item>刷新中...</item>
+    </string-array>
+</resources>
